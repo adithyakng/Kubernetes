@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: react-app
+  labels:
+    app: react-app
+spec:
+  containers:
+    - name: react-app-container
+      image: react-app:v1
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 80
